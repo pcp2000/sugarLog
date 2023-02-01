@@ -16,22 +16,16 @@
                 <!-- main navigation -->
                 <ul>
                     <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#calculator"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="#help"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="#reminder"><i class="fa-solid fa-bell-exclamation"></i></a></li>
+                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i></a></li>
+                    <li><a href="help.html"><i class="fa-solid fa-comment-question"></i></a></li>
+                    <li><a href="reminder.html"><i class="fa-solid fa-bell-exclamation"></i></a></li>
+                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
-                <!-- Login and signup navigation -->
-                <section>
-                    <ul>
-                        <li><a href="#login"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    </ul>
-                </section>
                 <!-- logout navigation -->
                 <section>
-                    <ul>
-                        <li><a href="#logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
-                    </ul>
+                    <!-- logout function -->
+                    <button><i class="fa-solid fa-right-from-bracket"></i></button>
                 </section>
             </nav>
             <!-- navigation ends here  -->
@@ -40,8 +34,146 @@
             <!-- logo end -->
         </header>
         <!-- header ends here -->
+        <!-- main section starts here -->
         <main>
-
+            <!-- users personal details -->
+            <aside>
+                <div>
+                    <img src="#" alt="user profile image">
+                </div>
+                <!-- here we will have javascript for name display -->
+                <div>Name: <span> </span></div>
+                <!-- here we will have javascript for email display -->
+                <div>Email: <span> </span></div>
+                <!-- here we will have javascript for Age display -->
+                <div>Age: <span> </span></div>
+                <!-- here we will have javascript for Gender display -->
+                <div>Gender: <span> </span></div>
+                <!-- here we will have javascript for BMI display -->
+                <div>BMI: <span> </span></div>
+                <!-- here we will have javascript for Diabetes Type display -->
+                <div>Diabetes Type: <span> </span></div>
+            </aside>
+            <!-- Main area for dashboard -->
+            <section>
+                <div>
+                    <a href="#"><i class="fa-solid fa-bell"></i><span>2</span></a>
+                </div>
+                <div><h1>Welcome!!</h1></div>
+                <!-- row -->
+                <div>
+                    <div>
+                        <h2>How are you doing today</h2>
+                        <div>
+                            <!-- card for emojis  -->
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Quote</h2>
+                        <div>
+                            <!-- quote card display -->
+                            <img src="#" alt="quote image">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Tip of the Day</h2>
+                        <div>
+                            <!-- tip of day card -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section for measurment display -->
+            <section>
+                <!-- main container div -->
+                <div>
+                    <!-- row -->
+                    <div>
+                        <!--  card for sugar intake -->
+                        <div>
+                            <div>
+                                <h4>Sugar Level</h4>
+                                <p></p> 
+                            </div>
+                        </div>
+                         <!--  card for calorie intake -->
+                        <div>
+                            <div>
+                                <h4>Calories</h4>
+                                <p></p> 
+                            </div>
+                        </div>
+                         <!--  card for water intake -->
+                        <div>
+                            <div>
+                                <h4>Water</h4>
+                                <p></p> 
+                            </div>
+                        </div>
+                        <!--  card for steps count -->
+                        <div>
+                            <div>
+                                <h4>Steps</h4>
+                                <p></p> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row div ends here -->
+                </div>
+                <!-- container ends here -->
+            </section>
+             <!-- Chart section -->
+            <section>
+                <!-- row -->
+                <div>
+                    <!-- sugar measurement chart card -->
+                    <div>
+                        <div>
+                            <h3>Sugar Chart</h3>
+                            <canvas></canvas>
+                        </div>
+                    </div>
+                    <!-- Calorie measurement chart card -->
+                    <div>
+                        <div>
+                            <h3>Calorie Chart</h3>
+                            <canvas></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>   
         </main>
+        <footer>
+            <!-- footer navigation -->
+            <section>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#calculator"><i class="fa-solid fa-calculator"></i></a></li>
+                    <li><a href="#help"><i class="fa-solid fa-comment-question"></i></a></li>
+                    <li><a href="#reminder"><i class="fa-solid fa-bell-exclamation"></i></a></li>
+                </ul>
+            </section>
+            <!-- Newsletter section -->
+            <section>
+                <h1>Newsletter</h1>
+                <p>You can trust us.</p>
+                <fieldset>
+                  <input type="email" name="newsletter" placeholder="Your Email Address">
+                  <button>Subscribe</button>
+                </fieldset>
+            </section> 
+            <!-- Copyrigts section -->
+            <section>
+                <h2>Copyright &copy;2023 All rights reserved || sugarLOG</h2>
+            </section>
+            <!-- social media links -->
+            <section>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </section>
+        </footer>
+        <!-- footer ends here -->
     </body>
 </html>

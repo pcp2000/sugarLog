@@ -17,22 +17,22 @@
                 <!-- main navigation -->
                 <ul>
                     <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#calculator"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="#help"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="#reminder"><i class="fa-solid fa-bell-exclamation"></i></a></li>
+                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i></a></li>
+                    <li><a href="help.html"><i class="fa-solid fa-comment-question"></i></a></li>
+                    <li><a href="reminder.html"><i class="fa-solid fa-bell-exclamation"></i></a></li>
+                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
                 <!-- Login and signup navigation -->
                 <section>
                     <ul>
-                        <li><a href="#login"><i class="fa-solid fa-right-to-bracket"></i></a></li>
+                        <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
                     </ul>
                 </section>
                 <!-- logout navigation -->
                 <section>
-                    <ul>
-                        <li><a href="#logout"><i class="fa-solid fa-right-from-bracket"></i></a></li>
-                    </ul>
+                    <!-- logout function -->
+                    <button><i class="fa-solid fa-right-from-bracket"></i></button>
                 </section>
             </nav>
             <!-- navigation ends here  -->
@@ -46,23 +46,113 @@
              <!-- Main header -->
             <section>
                 <!-- logo display -->
-                <img src="#logo" alt="logo display">
+                <div>
+                    <video src="#" autoplay muted loop></video>
+                </div>
                 <!-- Name and tagline display -->
                 <div>
-                    <h1>SugarLOG</h1>
-                    <h2>Record, Control, Relax</h2>
-                </div>
-                <!-- button - to get started -->
-                <div>
-                    <button type="submit">Let's get Started</button>
+                    <h1>SugarLog</h1>
+				    <h3>Record, Control, Relax</h3>
+				    <a href="#about" class="btn">Let's Get started</a>
                 </div>
             </section>
             <!-- main header section ends here -->
             <!-- About us section starts here -->
+            <section>
+                <div>
+                    <h1>About Us</h1>
+                    <p>Our product is designed to help individuals with diabetes manage their condition more effectively. Our mission is to offer you 
+                        control over both your life and your blood sugar levels. You decide your future once you regain control! We stand out from
+                        other products because we understand what it's like to live with diabetes every day. We get your desire to regain control, regain 
+                        your self-assurance, and go on on the path to a healthy future.
+                        This app provide features such as tracking blood sugar levels, monitoring calorie intake, tracking physical activity, and providing 
+                        reminders for taking medication. One of the special features include a chatbot with your personal Doctor to have live support. 
+                        You can also scan your packaged meals to have a count on your daily sugar and calorie intake, so you never have to worry!
+                    </p>
+                </div>
+            </section>
             <!-- About us section ends here -->
-            <!-- Our Serice section starts here -->
+            <!-- Our Service section starts here -->
+            <section>
+                <div>
+                    <h1>Our Services</h1>
+                    <p>we provide wide range of services</p>
+                </div>
+                <section>
+                    <div>
+                        <!-- row -->
+                        <div>
+                            <!--  service card 1 -->
+                            <div>
+                                <div>
+                                    <h4>Sugar Control</h4>
+                                    <p></p> 
+                                </div>
+                            </div>
+                             <!--  service card 2 -->
+                            <div>
+                                <div>
+                                    <h4>Calorie Control</h4>
+                                    <p></p> 
+                                </div>
+                            </div>
+                             <!-- service card 3 -->
+                            <div>
+                                <div>
+                                    <h4>Calculator</h4>
+                                    <p></p> 
+                                </div>
+                            </div>
+                            <!--  service card 4 -->
+                            <div>
+                                <div>
+                                    <h4>Remainders</h4>
+                                    <p></p> 
+                                </div>
+                            </div>
+                        </div>
+                        <!-- row div ends here -->
+                    </div>
+                    <!-- container ends here -->
+                </section>
+            </section>
             <!-- Our service section ends here -->
             <!-- contact us section starts here -->
+            <section>
+                <div>
+                    <form action="contact_info.html" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email">
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div>
+                    <h1>Contact Information</h1>
+                    <p>Here's how you can get in touch with us:</p>
+                    <ul>
+                      <li>
+                        <strong>Phone:</strong>
+                        <a href="tel:555-555-5555">555-555-5555</a>
+                      </li>
+                      <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:info@yourorganization.com">info@yourorganization.com</a>
+                      </li>
+                      <li>
+                        <strong>Address:</strong>
+                        123 downtown St.<br>
+                        Anytown, Canada N2C1Z7
+                      </li>
+                    </ul>
+                </div>
+            </section>
             <!-- contact us section ends -->
         </main>
         <!-- main section ends here -->
