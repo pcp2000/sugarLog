@@ -4,28 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
         <script src="https://kit.fontawesome.com/ae5425cf4e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <title>SugarLOG</title>
     </head>  
     <body>
-        <header>
+          <!-- header starts here -->
+          <header>
             <!-- Navigation -->
-            <nav>
+            <nav class="top-bar nav-bar">
                 <!-- main navigation -->
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="help.html"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="reminder.html"><i class="fa-solid fa-bell-exclamation"></i></a></li>
-                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i></a></li>
-                </ul>
-                <!-- logout navigation -->
-                <section>
+                <ul class="vertical medium-horizontal menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
+                    <li><a href="help.html"><i class="fa-solid fa-circle-question"></i>Help</a></li>
+                    <li><a href="reminder.html"><i class="fa-solid fa-stopwatch"></i>Reminder</a></li>
+                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i>User Profile</a></li>
+                    <!-- Login and signup navigation -->
+                    <li><a href="login.html" class="nav_right"><i class="fa-solid fa-right-to-bracket"></i>Login/Signup</a></li>
                     <!-- logout function -->
-                    <button><i class="fa-solid fa-right-from-bracket"></i></button>
-                </section>
+                    <li><a href="#" class="nav_right"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                </ul>
             </nav>
             <!-- navigation ends here  -->
             <!-- logo start-->
@@ -36,8 +41,8 @@
             <section>
                 <div>
                     <div>
-                        <h1>Ingredient scanner</h1>
-                        <strong>Scanned codes:</strong>
+                        <h1 class="txt-adjust">Ingredient scanner</h1>
+                        <strong class="txt-adjust">Scanned codes:</strong>
                         <!-- here scanned codes will be displayed -->
                         <ul></ul>
                     </div>
@@ -46,37 +51,46 @@
                 </div>
             </section>
         </main>
-        <footer>
+         <!-- footer starts here -->
+         <footer>
             <!-- footer navigation -->
-            <section>
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#calculator"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="#help"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="#reminder"><i class="fa-solid fa-bell-exclamation"></i></a></li>
-                </ul>
-            </section>
-            <!-- Newsletter section -->
-            <section>
-                <h1>Newsletter</h1>
-                <p>You can trust us.</p>
-                <fieldset>
-                  <input type="email" name="newsletter" placeholder="Your Email Address">
-                  <button>Subscribe</button>
-                </fieldset>
+            <section class="grid-x grid-container">
+                <section class="cell large-3 medium-6 small-12">
+                    <img src="assessts\logo.png" alt="logo">
+                </section>
+                <!-- social media links -->
+                <nav class="cell large-3 medium-6 small-12">
+                    <ul class="menu vertical">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+                <!-- Newsletter section -->
+                <section class="cell large-3 medium-6 small-12 nws-main">
+                    <h1 class="newsletter">Newsletter</h1>
+                    <p class="nws-pa">You can trust us.</p>
+                    <form action="index.html" method="post" class="medium-12 cell subscribe">
+                        <fieldset>
+                            <label for="newsletter" class="nws-pa">Enter your email address to subscribe to our newsletter:</label>
+                            <input type="email" id="newsletter" name="newsletter" placeholder="Your Email Address" required>
+                            <button type="submit" class="medium-4 cell sub-btn">Subscribe</button>
+                        </fieldset>
+                    </form>
+                </section>
             </section> 
             <!-- Copyrigts section -->
-            <section>
-                <h2>Copyright &copy;2023 All rights reserved || sugarLOG</h2>
-            </section>
-            <!-- social media links -->
-            <section>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </section>
+            <section class="bottom">
+                <h1>Copyright &copy;2023 All rights reserved || sugarLOG</h1>
+            </section>         
+           
         </footer>
         <!-- footer ends here -->
+        <!-- foundation scripts -->
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

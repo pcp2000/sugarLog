@@ -4,8 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css\style.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
         <script src="https://kit.fontawesome.com/ae5425cf4e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         <title>SugarLOG</title>
     </head>  
 
@@ -13,27 +18,20 @@
         <!-- header starts here -->
         <header>
             <!-- Navigation -->
-            <nav>
+            <nav class="top-bar nav-bar">
                 <!-- main navigation -->
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="help.html"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="reminder.html"><i class="fa-solid fa-bell-exclamation"></i></a></li>
-                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i></a></li>
-                </ul>
-                <!-- Login and signup navigation -->
-                <section>
-                    <ul>
-                        <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    </ul>
-                </section>
-                <!-- logout navigation -->
-                <section>
+                <ul class="vertical medium-horizontal menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
+                    <li><a href="help.html"><i class="fa-solid fa-circle-question"></i>Help</a></li>
+                    <li><a href="reminder.html"><i class="fa-solid fa-stopwatch"></i>Reminder</a></li>
+                    <li><a href="user_profile.html"><i class="fa-solid fa-user"></i>User Profile</a></li>
+                    <!-- Login and signup navigation -->
+                    <li><a href="login.html" class="nav_right"><i class="fa-solid fa-right-to-bracket"></i>Login/Signup</a></li>
                     <!-- logout function -->
-                    <button><i class="fa-solid fa-right-from-bracket"></i></button>
-                </section>
+                    <li><a href="#" class="nav_right"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                </ul>
             </nav>
             <!-- navigation ends here  -->
             <!-- logo start-->
@@ -44,23 +42,22 @@
         <!-- Main section starts here -->
         <main>
              <!-- Main header -->
-            <section>
+            <section class="showcase">
                 <!-- logo display -->
-                <div>
+                <div class="video-container">
                     <video src="#" autoplay muted loop></video>
                 </div>
                 <!-- Name and tagline display -->
-                <div>
+                <div class="content">
                     <h1>SugarLog</h1>
-				    <h3>Record, Control, Relax</h3>
-				    <a href="#about" class="btn">Let's Get started</a>
+				    <p>Record, Control, Relax</p>
+				    <a href="#about" class="get-started-btn">Let's Get started</a>
                 </div>
             </section>
             <!-- main header section ends here -->
             <!-- About us section starts here -->
-            <section>
-                <div>
-                    <h1>About Us</h1>
+            <section id="about">
+                <h2>About Us</h2>
                     <p>Our product is designed to help individuals with diabetes manage their condition more effectively. Our mission is to offer you 
                         control over both your life and your blood sugar levels. You decide your future once you regain control! We stand out from
                         other products because we understand what it's like to live with diabetes every day. We get your desire to regain control, regain 
@@ -69,71 +66,56 @@
                         reminders for taking medication. One of the special features include a chatbot with your personal Doctor to have live support. 
                         You can also scan your packaged meals to have a count on your daily sugar and calorie intake, so you never have to worry!
                     </p>
-                </div>
             </section>
             <!-- About us section ends here -->
             <!-- Our Service section starts here -->
-            <section>
-                <div>
-                    <h1>Our Services</h1>
-                    <p>we provide wide range of services</p>
-                </div>
-                <section>
-                    <div>
-                        <!-- row -->
-                        <div>
-                            <!--  service card 1 -->
-                            <div>
-                                <div>
-                                    <h4>Sugar Control</h4>
-                                    <p></p> 
-                                </div>
-                            </div>
-                             <!--  service card 2 -->
-                            <div>
-                                <div>
-                                    <h4>Calorie Control</h4>
-                                    <p></p> 
-                                </div>
-                            </div>
-                             <!-- service card 3 -->
-                            <div>
-                                <div>
-                                    <h4>Calculator</h4>
-                                    <p></p> 
-                                </div>
-                            </div>
-                            <!--  service card 4 -->
-                            <div>
-                                <div>
-                                    <h4>Remainders</h4>
-                                    <p></p> 
-                                </div>
-                            </div>
+            <section id="service">
+                <h2>Our Services</h2>
+                <p>we provide wide range of services</p>
+                <!-- media cards for services -->
+                <div class="service-cards">
+                    <div class="card">
+                        <div class="front">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                            <h3>Sugar Control</h3>  
                         </div>
-                        <!-- row div ends here -->
+                        <div class="back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                    <!-- container ends here -->
-                </section>
+                    <div class="card">
+                        <div class="front">
+                            <i class="fa-solid fa-weight-scale"></i>
+                            <h3>Calorie Control</h3>
+                        </div>
+                        <div class="back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front">
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <h3>Remainders</h3>
+                        </div>
+                        <div class="back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="front">
+                            <i class="fa-solid fa-calculator"></i>
+                            <h3>Calculator</h3>
+                        </div>
+                        <div class="back">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>                    
             </section>
             <!-- Our service section ends here -->
             <!-- contact us section starts here -->
-            <section>
-                <div>
-                    <form action="contact_info.html" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name">
-                    
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="user_email">
-                    
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="user_message"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-                <div>
+            <section id="contact">
+                <section class="contact-content">
                     <h1>Contact Information</h1>
                     <p>Here's how you can get in touch with us:</p>
                     <ul>
@@ -151,7 +133,21 @@
                         Anytown, Canada N2C1Z7
                       </li>
                     </ul>
-                </div>
+                </section>
+                <section>
+                    <form action="contact_info.html" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="user_email">
+                    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="user_message"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
             </section>
             <!-- contact us section ends -->
         </main>
@@ -159,35 +155,43 @@
         <!-- footer starts here -->
         <footer>
             <!-- footer navigation -->
-            <section>
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><a href="#calculator"><i class="fa-solid fa-calculator"></i></a></li>
-                    <li><a href="#help"><i class="fa-solid fa-comment-question"></i></a></li>
-                    <li><a href="#reminder"><i class="fa-solid fa-bell-exclamation"></i></a></li>
-                </ul>
-            </section>
-            <!-- Newsletter section -->
-            <section>
-                <h1>Newsletter</h1>
-                <p>You can trust us.</p>
-                <fieldset>
-                  <input type="email" name="newsletter" placeholder="Your Email Address">
-                  <button>Subscribe</button>
-                </fieldset>
+            <section class="grid-x grid-container">
+                <section class="cell large-3 medium-6 small-12">
+                    <img src="assessts\logo.png" alt="logo">
+                </section>
+                <!-- social media links -->
+                <nav class="cell large-3 medium-6 small-12">
+                    <ul class="menu vertical">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </nav>
+                <!-- Newsletter section -->
+                <section class="cell large-3 medium-6 small-12 nws-main">
+                    <h1 class="newsletter">Newsletter</h1>
+                    <p class="nws-pa">You can trust us.</p>
+                    <form action="index.html" method="post" class="medium-12 cell subscribe">
+                        <fieldset>
+                            <label for="newsletter" class="nws-pa">Enter your email address to subscribe to our newsletter:</label>
+                            <input type="email" id="newsletter" name="newsletter" placeholder="Your Email Address" required>
+                            <button type="submit" class="medium-4 cell sub-btn">Subscribe</button>
+                        </fieldset>
+                    </form>
+                </section>
             </section> 
             <!-- Copyrigts section -->
-            <section>
-                <h2>Copyright &copy;2023 All rights reserved || sugarLOG</h2>
-            </section>
-            <!-- social media links -->
-            <section>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-            </section>
+            <section class="bottom">
+                <h1>Copyright &copy;2023 All rights reserved || sugarLOG</h1>
+            </section>         
+           
         </footer>
         <!-- footer ends here -->
+        <!-- foundation scripts -->
+        <script src="js/vendor/foundation.js"></script>
+        <script src="js/vendor/foundation.min.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/vendor/what-input.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

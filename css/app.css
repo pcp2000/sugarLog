@@ -1,0 +1,510 @@
+:root {
+	--primary-color: #14213D;
+    --secondary-color: #FCA311;
+    --text-primary: #FFFFFF;
+    --text-secondary: #000000;
+    --tertiary-color: #E5E5E5; 
+    --text-primary-font: 'Nunito', sans-serif;
+    --text-secondary-font: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--tertiary-color);
+}
+/* header section */
+
+nav ul li a {
+    color: var(--text-primary);
+    font-family: var(--text-primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    margin: 2px;
+}
+nav ul li a i {
+    padding: 5px;
+    margin: 5px;
+}
+
+.nav_right {
+    position: relative;
+    right: -300px;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);   
+}
+/* index page css */
+/* hero section  */
+.showcase {
+	position: relative;
+    height: 100vh;
+}
+.showcase .navbar {
+    display: none;
+}
+.video-container {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+}
+.video-container video {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.content { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-primary);
+    z-index: 2;
+    padding-bottom: 5px;
+    font-family: var(--text-primary-font);
+}
+.content h1{
+    font-size: 65px;
+}
+.content p {
+    font-size: 25px;
+    margin-bottom: 2.5%;
+    font-weight: 200;
+}
+.get-started-btn {
+    background-color: var(--tertiary-color);
+    color: var(--text-secondary);
+    padding: 20px 30px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--text-secondary-font);   
+}
+/* about section */
+#about { 
+    padding: 150px 150px 100px 150px;
+}
+
+h1 , h2 {
+    color: var(--text-secondary);
+    font-family: var(--text-primary-font);
+    font-weight: 700;
+}
+
+h1 { 
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p{
+    color: var(--text-secondary);
+    font-family: var(--text-secondary-font);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#about p {
+    text-align: justify;
+}
+/* service section */
+#service {
+   padding: 0px 150px 0px 150px;
+   max-width: 1920px;
+
+}
+
+/* Style for section with class "services" */
+  /* Style for the heading "Our Services" */
+  #service h2 {
+    font-size: 36px;
+    
+  }
+  #service nav {
+    display: none;
+  }
+  
+  /* Style for the service cards container */
+  .service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for each individual service card */
+  .card {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.766);
+    text-align: center;
+    height: 400px;
+    justify-content: center;
+    transition: transform 0.2s ease-out;
+    perspective: 1000px;   /* Add a 3D perspective */
+    position: relative;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card i {
+    max-width: 100%;
+    height: auto;
+    font-size: 40px;
+  }
+  
+  .card h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .card p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  /* flipping effect css */
+  .front, .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the backface of the element */
+    transition: transform 0.6s ease; /* Add a transition effect */
+  }
+  
+  .front {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+  }
+  
+  .back {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .back {
+    transform: rotateY(0deg);
+  }
+/*  contact section */
+  #contact {
+    align-content: center;
+    display: flex;
+    padding: 50px 150px 0 150px;
+    margin: 50px 120px;
+    align-items: center;
+    text-align: justify;
+  }
+ 
+#contact form {
+    max-width: 396px;
+    margin: 0px 50px 0px 50px;   
+  }
+  
+  #contact form input[type="text"],
+  #contact form input[type="email"],
+  #contact form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    margin: 0 0 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  #contact form input[type="submit"] {
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contact form input[type="submit"]:hover {
+    background-color: #444;
+  }
+
+  .contact-content{
+    float: left;
+    margin-left: 10px;
+    flex: 6;
+  }
+  .contact-content h1 {
+    align-items: center;
+  }
+  .contact-content ul {
+    list-style-type: none;
+
+  }
+  .contact-content ul li strong {
+    font-size: 20px;
+    margin: 10px 0;
+    word-wrap: break-word;
+  }
+  /*  footer  */
+
+  footer{
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+  }
+  .cell:nth-child(1) h3,.cell:nth-child(4) h3{
+    text-align: left;
+  }
+
+  footer nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5px; 
+  }
+  footer nav ul li{
+    padding-top: 5px;
+    cursor: pointer;
+  }
+  footer nav ul li a:hover{
+    color: #FCA311;
+  }
+  .nws-main {
+    padding: 10px 10px 0px 10px;
+    margin: 20px 0px 0px 50px;
+    text-align: justify; 
+  }
+
+  .newsletter {
+    font-family: var(--text-primary-font);
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  .nws-pa {
+    font-family: var(--text-secondary-font);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--text-primary);
+  }
+ 
+  .sub-btn{
+    background-color: var(--tertiary-color);
+    color: var(--text-secondary);
+    padding: 10px 20px 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--text-secondary-font); 
+  }
+  .sub-btn:hover{
+    background-color: var(--secondary-color);
+  }
+  .bottom{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ .bottom h1{
+    font-family:var(--text-primary-font);
+    font-size: 16px;
+    color: var(--tertiary-color);
+    text-align: center;
+    padding-top: 2%;
+ }
+
+ /* login page, sign up  */
+.login{
+    padding: 10px;
+    margin: 5%;
+}
+ .txt-adjust { 
+    text-align: center;
+ }
+ .log-in-form {
+    border: 1px solid var(--text-secondary);
+    background-color: var(--primary-color);
+    padding: 1rem  1rem 0 1rem;
+    border-radius: 0;
+    width: 50%;
+    margin-left: 25%;
+   
+  }
+
+.log-in-form label{
+    color: var(--text-primary);
+    font-family: var(--text-secondary-font);
+    font-size: 14px;
+}
+.log-in-form a {
+    color: var(--text-primary);
+    font-family: var(--text-secondary-font);
+    font-size: 14px;
+    margin-right: 4%;
+}
+
+.button.expanded {
+    background-color: var(--tertiary-color);
+    color: var(--text-secondary);
+    padding: 20px 30px 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: var(--text-secondary-font);
+    margin-left: 35%;
+}
+ #log a {
+    color: var(--primary-color);
+    font-family: var(--text-secondary-font);
+    font-size: 24px;
+    margin-right: 4%;
+ }
+ #social-log { 
+    text-align: center; 
+ }
+ #social-log a { 
+    display: block; 
+    margin-bottom: 10px;
+    width: 25%;
+    justify-content: center; 
+ }
+
+ .social-btn { 
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    margin: 0 60% 0 38%;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: lowercase;
+    cursor: pointer;
+    font-family: var(--text-secondary-font);
+
+ }
+.social-btn i { 
+    padding: 3%;
+}
+/* calculator, reminder css */
+#cal nav { 
+  position: relative;
+}
+.cal-card {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var();
+  margin: 20px auto;
+  padding: 50px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.cal-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cal-card label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-primary);
+  font-size: 18px;
+  font-family: var(--text-secondary-font);
+}
+
+.cal-card input {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.cal-card button {
+  background-color: var(--tertiary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 10px;
+  font-family: var(--text-secondary-font);
+  font-size: 18px;
+}
+
+.cal-card button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* css for progress bar */
+#progress {
+  width: 100%;
+  height: 10px;
+  margin-top: 10px;
+}
+
+#progress::-webkit-progress-bar {
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+#progress::-webkit-progress-value {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* search page */
+.sea-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.sear-bar label {
+  margin-right: 0.5rem;
+}
+
+.sea-bar input {
+  flex: 1;
+}
+.sear-bar button {
+  margin-left: 0.5rem;
+}
+
